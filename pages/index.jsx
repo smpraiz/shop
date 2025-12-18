@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchStatus() {
       try {
-        const res = await fetch('https://api.mcstatus.io/v2/status/java/jogar.smpraiz.com.br:10295');
+        const res = await fetch('https://api.mcstatus.io/v2/status/java/terramedia.smpraiz.com.br:10295');
         const data = await res.json();
         setStatus(data);
       } catch (error) {
@@ -34,12 +34,12 @@ export default function Home() {
         <main className={styles.main}>
           
           <h1>
-            Bem-vindo(a) ao SMP Raiz!
+            Bem-vindo(a) ao Terra Média!
           </h1>
 
           <section className={styles.container}>
             <p>
-              O SMP Raiz é um servidor de Minecraft focado na experiência raiz do jogo, com
+              O Terra Média é um servidor de Minecraft focado na experiência raiz do jogo, com
               liberdade pra tudo (menos hack) e uma comunidade amigável. Aqui, você pode
               explorar, construir e se divertir com outros jogadores em um ambiente livre,
               justo e equilibrado.
@@ -53,7 +53,7 @@ export default function Home() {
             <p>
               Para entrar no servidor, adicione o seguinte endereço IP no seu Minecraft:
             </p>
-            <input type="text" name="ip" id="Ip" readOnly value={'jogar.smpraiz.com.br'} onClick={(e) => e.target.select()} />
+            <input type="text" name="ip" id="Ip" readOnly value={'terramedia.smpraiz.com.br'} onClick={(e) => e.target.select()} />
             <input type="text" name="port" id="Port" readOnly value={'10295'} onClick={(e) => e.target.select()} />
             <p>
               Você pode jogar no Minecraft Bedrock (qualquer versão) e Minecraft Java Edition (qualquer versão acima da 1.9), seja pirata ou original. A melhor experiência é sempre na versão mais recente!

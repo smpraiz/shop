@@ -11,10 +11,10 @@ import Head from 'next/head';
  * @returns 
  */
 export default function CustomHead({
-    pageTitle="SMP Raiz - Minecraft de verdade!",
+    pageTitle="Terra Média - Minecraft de verdade!",
     pageDescription="Participe do SMP mais raiz do Brasil, com semi-anarquia, liberdade e sobrevivência de verdade!",
     pageImage="/favicon.png",
-    pageImageAlt="Ícone do SMP Raiz",
+    pageImageAlt="Ícone do Terra Média",
     pageUrl="https://smpraiz.com.br"
 }) {
     return (

@@ -15,11 +15,11 @@ async function sendDiscordNotification({ player, productName, amount = 1, quanti
   coupon && fields.push({ name: "Cupom", value: `\`${coupon}\``, inline: true });
 
   const embed = {
-    title: "🛒 Nova compra no SMP Raiz!",
+    title: "🛒 Nova compra no Terra Média!",
     color: 0x00FF00,
     fields,
     timestamp: new Date().toISOString(),
-    footer: { text: "SMP Raiz - Minecraft de verdade!" }
+    footer: { text: "Terra Média - Minecraft de verdade!" }
   };
 
   await fetch(webhookUrl, {
@@ -41,7 +41,7 @@ function buildCommand({ player, product, extra, quantity=1 }) {
     case 'vip1':
       return `smpstore vip1 ${player}`;
     default:
-      return `msg ${player} Obrigado pela compra no SMP Raiz!`;
+      return `msg ${player} Obrigado pela compra no Terra Média!`;
   }
 }
 

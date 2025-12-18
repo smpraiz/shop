@@ -12,9 +12,10 @@ export default function Shop() {
   useEffect(() => {
     async function fetchStatus() {
       try {
-        const res = await fetch('https://api.mcstatus.io/v2/status/java/jogar.smpraiz.com.br:10295');
+        const res = await fetch('https://api.mcstatus.io/v2/status/java/br-enx-1.enxadahost.com:10295');
         const data = await res.json();
         setStatus(data);
+        console.log(data)
       } catch (error) {
         console.error('Erro ao buscar status:', error);
       } finally {
@@ -27,8 +28,8 @@ export default function Shop() {
   return (
     <>
       <CustomHead 
-        pageTitle="SMP Raiz - Loja!"
-        pageDescription="Compre ranks, kits e outros itens cosméticos para o SMP Raiz. Apoie o servidor e melhore sua experiência de jogo!"
+        pageTitle="Terra Média - Loja!"
+        pageDescription="Compre ranks, kits e outros itens cosméticos para o Terra Média. Apoie o servidor e melhore sua experiência de jogo!"
         pageUrl="https://smpraiz.com.br"
       />
 
