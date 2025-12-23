@@ -36,6 +36,8 @@ function buildCommand({ player, product, extra, quantity=1 }) {
   switch (product) {
     case 'kitnether':
       return `smpstore kitnether ${player} ${quantity}`;
+    case 'kitend':
+      return `smpstore kitend ${player} ${quantity}`
     case 'apoiador':
       return `smpstore apoiador ${player}`;
     case 'vip1':

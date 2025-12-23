@@ -28,13 +28,13 @@ export const PRODUCTS = {
             id: 'kitnether',
             price: 5.00,
             description: 'Blocos de construção aleatórios da dimensão do Nether.',
-            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida) e blocos de tijolos do nether. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
-            icon: 'https://minecraft.wiki/images/Ender_Chest_JE2_BE2.gif?90e80',
+            expanded_description: 'Na compra de um Kit Nether, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: netherrack, areias da alma, pedras-negras, madeiras (carmesim OU distorcida), blocos de tijolos do nether, pedra luminosa e cogubrilho. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
+            icon: 'https://minecraft.wiki/images/Chest.gif?ca959',
             fields: [
                 {
                     name: 'quantity',
                     type: 'number',
-                    placeholder: 'Quantidade de kits (1-99)',
+                    placeholder: 'Quantidade de kits (1-100)',
                     required: true,
                     min: 1,
                     max: 100,
@@ -42,6 +42,25 @@ export const PRODUCTS = {
                 },
             ],
         },
+        {
+            name: 'Kit End',
+            id: 'kitend',
+            price: 4.00,
+            description: 'Blocos de construção aleatórios da dimensão do The End.',
+            expanded_description: 'Na compra de um Kit End, você pode receber de 1 unidade a 1 pack de cada um dos seguintes itens: pedra do end, obsidian, lâmpada do end e bloco púrpura. As quantidades são aleatórias por compra e dependerão da sua sorte, com pelo menos 1 de cada item sendo garantido.',
+            icon: 'https://minecraft.wiki/images/Ender_Chest_JE2_BE2.gif?90e80',
+            fields: [
+                {
+                    name: 'quantity',
+                    type: 'number',
+                    placeholder: 'Quantidade de kits (1-100)',
+                    required: true,
+                    min: 1,
+                    max: 100,
+                    value: 1,
+                },
+            ],
+        }
     ],
     /*'Cargos': [
         {
